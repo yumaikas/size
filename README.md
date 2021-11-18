@@ -24,6 +24,18 @@ First, you'll want to [install Janet](https://janet-lang.org/docs/index.html#Ins
 
 `size` is a small program for counting words, lines and bytes in a windows command prompt. It can be used on linux or osx, but is likely not needed there, due to the presence of `wc`.
 
+#### Usage
+
+`type README.md | size` should output something like:
+
+```
+Stdin was 19 lines, 112 words, and 705 bytes
+``` 
+
+`-KB`, `-MB`, and `-GB` will report sizes in kilobytes, megabytes and gigabytes respectively. 
+
+See `-help` for more info.
+
 ### env-explode
 
 `env-explode` prints out delimited environment variables, one element per line.
@@ -58,14 +70,3 @@ mem by-name -MB
 
 `-KB`, `-MB`, and `-GB` will report memory usage in kilobytes, megabytes and gigabytes respectively. 
 
-### Usage
-
-`type README.md | size` should output something like:
-
-```
-Stdin was 19 lines, 112 words, and 705 bytes
-``` 
-
-`-KB`, `-MB`, and `-GB` will report sizes in kilobytes, megabytes and gigabytes respectively. 
-
-See `-help` for more info.
