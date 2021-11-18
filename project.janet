@@ -1,13 +1,20 @@
 (declare-project 
-  :name "size"
+  :name "cmd utils"
   :author "Andrew Owen <yumaikas94@gmail.com"
   :url "https://github.com/yumaikas/cmd-utils"
-  :description "A counter for the size of data sent over stdin"
-  :dependencies [ "https://github.com/nate/isatty" ])
+  :description "Various simple command line tools."
+  :dependencies [ 
+                 "https://github.com/nate/isatty" 
+                 "spork"
+                 ])
 
 (declare-executable
   :name "size"
   :entry "size.janet")
+
+(declare-executable
+  :name "web-dir"
+  :entry "web-dir.janet")
 
 (declare-executable
   :name "env-explode"
@@ -18,6 +25,7 @@
        (os/cd "build")
        (os/shell "inst size.exe")
        (os/shell "inst env-explode.exe")
+       (os/shell "inst web-dir.exe")
        (os/cd "..")
        (print "Installed"))
 
