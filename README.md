@@ -34,8 +34,6 @@ Stdin was 19 lines, 112 words, and 705 bytes
 
 `-KB`, `-MB`, and `-GB` will report sizes in kilobytes, megabytes and gigabytes respectively. 
 
-See `-help` for more info.
-
 ### env-explode
 
 `env-explode` prints out delimited environment variables, one element per line.

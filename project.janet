@@ -5,8 +5,10 @@
   :description "Various simple command line tools."
   :dependencies [ 
                  "https://github.com/nate/isatty" 
+                 "https://github.com/swlkr/janet-html"
                  "spork"
                  ])
+
 
 (declare-executable
   :name "size"
